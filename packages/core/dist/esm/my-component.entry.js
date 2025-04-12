@@ -1,9 +1,5 @@
 import { r as registerInstance, h } from './index-e0544da2.js';
 
-function format(first, middle, last) {
-  return (first || '') + (middle ? ` ${middle}` : '') + (last ? ` ${last}` : '');
-}
-
 const myComponentCss = ":host{display:block}";
 
 const MyComponent = class {
@@ -13,11 +9,8 @@ const MyComponent = class {
     this.middle = undefined;
     this.last = undefined;
   }
-  getText() {
-    return format(this.first, this.middle, this.last);
-  }
   render() {
-    return h("div", null, "Hello, World! I'm ", this.getText());
+    return h("div", null, "Hello, World!");
   }
 };
 MyComponent.style = myComponentCss;

@@ -1,5 +1,5 @@
 {
-  "name": "@you/vue-ui-kit",
+  "name": "@holygata/vue-library",
   "version": "0.0.1",
   "description": "",
   "main": "lib/index.js",
@@ -14,7 +14,7 @@
   },
   "devDependencies": {
     "@types/node": "^15.12.2",
-    "@you/ui-kit": "workspace:*",
+    "@holygata/core": "workspace:*",
     "typescript": "^4.9.4"
   },
   "dependencies": {

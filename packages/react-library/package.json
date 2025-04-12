@@ -1,5 +1,5 @@
 {
-  "name": "@you/react-ui-kit",
+  "name": "@holygata/react-library",
   "sideEffects": false,
   "version": "0.0.1",
   "private": true,
@@ -9,8 +9,7 @@
     "url": "https://github.com/ionic-team/ionic.git"
   },
   "scripts": {
-    "build": "npm run clean && npm run compile",
-    "clean": "rm -rf dist",
+    "build": "npm run compile",
     "compile": "npm run tsc",
     "tsc": "tsc -p .",
     "rollup": "rollup -c"
@@ -26,7 +25,7 @@
     "@types/node": "^15.12.2",
     "@types/react": "^17.0.34",
     "@types/react-dom": "^17.0.11",
-    "@you/ui-kit": "workspace:*",
+    "@holygata/core": "workspace:*",
     "np": "^3.1.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -36,6 +35,6 @@
   "peerDependencies": {
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "@you/ui-kit": ">=0.0.1"
+    "@holygata/core": ">=0.0.1"
   }
 }

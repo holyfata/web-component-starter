@@ -10,27 +10,17 @@ export const config: Config = {
   },
   outputTargets: [
     react({
-      componentCorePackage: '@you/ui-kit',
+      componentCorePackage: '@holygata/core',
       proxiesFile: '../react-library/src/components/stencil-generated/index.ts',
       includeDefineCustomElements: true,
     }),
     vueOutputTarget({
-      componentCorePackage: '@you/ui-kit', // i.e.: stencil-library
+      componentCorePackage: '@holygata/core', // i.e.: stencil-library
       proxiesFile: '../vue-library/src/components.ts',
     }),
     {
       type: 'dist',
       esmLoaderPath: '../loader',
-    },
-    {
-      type: 'dist-custom-elements',
-    },
-    {
-      type: 'docs-readme',
-    },
-    {
-      type: 'www',
-      serviceWorker: null, // disable service workers
     },
   ],
 };

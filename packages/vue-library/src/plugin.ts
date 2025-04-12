@@ -1,5 +1,5 @@
 import { Plugin } from 'vue';
-import { applyPolyfills, defineCustomElements } from '@you/ui-kit/loader';
+import { applyPolyfills, defineCustomElements } from '@holygata/core/loader';
 
 export const ComponentLibrary: Plugin = {
   async install() {

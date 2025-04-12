@@ -11,6 +11,5 @@ export declare class MyComponent {
    * The last name
    */
   last: string;
-  private getText;
   render(): any;
 }

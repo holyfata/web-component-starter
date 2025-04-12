@@ -1,16 +1,12 @@
 import { h } from '@stencil/core';
-import { format } from '../../utils/utils';
 export class MyComponent {
   constructor() {
     this.first = undefined;
     this.middle = undefined;
     this.last = undefined;
   }
-  getText() {
-    return format(this.first, this.middle, this.last);
-  }
   render() {
-    return h("div", null, "Hello, World! I'm ", this.getText());
+    return h("div", null, "Hello, World!");
   }
   static get is() { return "my-component"; }
   static get encapsulation() { return "shadow"; }
