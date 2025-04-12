@@ -139,5 +139,7 @@ dist
 .turbo
 
 # stencil
+.stencil
+stencil-output
 loader
 www

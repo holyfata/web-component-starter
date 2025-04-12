@@ -1,1 +1,1 @@
-export { Button } from './Button';
+export * from './stencil-output/components';

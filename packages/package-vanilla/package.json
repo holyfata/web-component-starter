@@ -21,6 +21,10 @@
       "import": "./loader/index.js",
       "require": "./loader/index.cjs",
       "types": "./loader/index.d.ts"
+    },
+    "./dist/components/hf-qrcode.js": {
+      "import": "./dist/components/hf-qrcode.js",
+      "types": "./dist/components/hf-qrcode.d.ts"
     }
   },
   "repository": {
@@ -38,7 +42,8 @@
   },
   "devDependencies": {
     "@stencil/core": "^4.27.1",
-    "@types/node": "^22.13.5"
+    "@stencil/react-output-target": "1.0.2",
+    "@stencil/vue-output-target": "0.10.7"
   },
   "license": "MIT"
 }

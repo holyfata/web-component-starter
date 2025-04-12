@@ -1,3 +1,1 @@
-import Counter from './Counter.vue';
-
-export { Counter };
+export * from './stencil-output/components';
