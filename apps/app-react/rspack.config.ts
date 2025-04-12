@@ -15,6 +15,9 @@ export default defineConfig({
 	resolve: {
 		extensions: ["...", ".ts", ".tsx", ".jsx"]
 	},
+	devServer: {
+		port: '8082',
+	},
 	module: {
 		rules: [
 			{

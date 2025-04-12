@@ -13,6 +13,9 @@ export default defineConfig({
 	resolve: {
 		extensions: ["...", ".ts", ".vue"]
 	},
+	devServer: {
+		port: '8081',
+	},
 	module: {
 		rules: [
 			{

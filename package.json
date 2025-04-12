@@ -1,10 +1,6 @@
 {
 	"scripts": {
-		"build:package-react": "pnpm --filter=package-react run build",
-		"build:package-vue": "pnpm --filter=package-vue run build",
-		"dev:app-react": "pnpm --filter=app-react run dev",
-		"dev:app-vue": "pnpm --filter=app-vue run dev",
-		"dev:app-vanilla": "pnpm --filter=app-vanilla run dev",
+		"dev": "turbo run dev",
 		"build": "turbo run build"
 	},
 	"devDependencies": {

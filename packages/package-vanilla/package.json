@@ -13,19 +13,12 @@
       "import": "./dist/package-vanilla/package-vanilla.esm.js",
       "require": "./dist/package-vanilla/package-vanilla.cjs.js"
     },
-    "./my-component": {
-      "import": "./dist/components/my-component.js",
-      "types": "./dist/components/my-component.d.ts"
-    },
     "./loader": {
       "import": "./loader/index.js",
       "require": "./loader/index.cjs",
       "types": "./loader/index.d.ts"
     },
-    "./dist/components/hf-qrcode.js": {
-      "import": "./dist/components/hf-qrcode.js",
-      "types": "./dist/components/hf-qrcode.d.ts"
-    }
+    "./dist/*": "./dist/*"
   },
   "repository": {
     "type": "git",

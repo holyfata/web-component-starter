@@ -23,6 +23,12 @@
             "dependsOn": [
                 "package-vanilla#build"
             ]
+        },
+        "dev": {
+            "dependsOn": [
+                "package-react#build",
+                "package-vue#build"
+            ]
         }
     }
 }
