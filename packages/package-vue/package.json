@@ -5,8 +5,14 @@
   "main": "./dist/index.js",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
   "scripts": {
-    "build": "rslib build && vue-tsc"
+    "build": "rslib build && vue-tsc",
+    "bump": "changelogen --bump --no-tag",
+    "release": "changelogen --publish"
   },
   "devDependencies": {
     "@rsbuild/plugin-vue": "1.0.7",
@@ -19,5 +25,16 @@
   "peerDependencies": {
     "package-vanilla": "workspace:*",
     "vue": ">=3.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/holyfata/web-component-starter",
+    "directory": "packages/package-vue"
+  },
+  "keywords": [
+    "vue"
+  ],
+  "author": "HolyFata",
+  "license": "MIT",
+  "description": "A Vue 3 component."
 }

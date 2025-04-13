@@ -1,7 +1,6 @@
 {
   "name": "package-vanilla",
   "version": "0.0.1",
-  "description": "Stencil Component Starter",
   "main": "dist/index.cjs.js",
   "module": "dist/index.js",
   "types": "dist/types/index.d.ts",
@@ -20,23 +19,40 @@
     },
     "./dist/*": "./dist/*"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/stenciljs/component-starter.git"
-  },
   "files": [
     "dist/",
     "loader/"
   ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
   "scripts": {
     "build": "stencil build",
     "start": "stencil build --dev --watch --serve",
-    "generate": "stencil generate"
+    "generate": "stencil generate",
+    "bump": "changelogen --bump",
+    "release": "changelogen --publish",
+    "postrelease": "node ./scripts/git-tag.cjs"
   },
   "devDependencies": {
     "@stencil/core": "^4.27.1",
     "@stencil/react-output-target": "1.0.2",
     "@stencil/vue-output-target": "0.10.7"
   },
-  "license": "MIT"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/holyfata/web-component-starter",
+    "directory": "packages/package-vanilla"
+  },
+  "keywords": [
+    "vanilla",
+    "qrcode",
+    "generator",
+    "qr",
+    "code"
+  ],
+  "author": "HolyFata",
+  "license": "MIT",
+  "description": "A Vanilla 3 component."
 }

@@ -13,8 +13,14 @@
   "files": [
     "dist"
   ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
   "scripts": {
-    "build": "rslib build"
+    "build": "rslib build",
+    "bump": "changelogen --bump --no-tag",
+    "release": "changelogen --publish"
   },
   "devDependencies": {
     "@rsbuild/plugin-react": "1.2.0",
@@ -29,5 +35,20 @@
     "react": ">=16.9.0",
     "react-dom": ">=16.9.0",
     "package-vanilla": "workspace:*"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/holyfata/web-component-starter",
+    "directory": "packages/package-react"
+  },
+  "keywords": [
+    "react",
+    "qrcode",
+    "generator",
+    "qr",
+    "code"
+  ],
+  "author": "HolyFata",
+  "license": "MIT",
+  "description": "A React 3 component."
 }

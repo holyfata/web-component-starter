@@ -9,6 +9,13 @@
         "package-vue#build"
       ]
     },
+    "build:pkg": {
+      "dependsOn": [
+        "package-vanilla#build",
+        "package-react#build",
+        "package-vue#build"
+      ]
+    },
     "package-vanilla#build": {
       "outputs": ["dist/**"]
     },
@@ -22,6 +29,12 @@
     },
     "dev": {
       "dependsOn": ["package-react#build", "package-vue#build"]
+    },
+    "bump": {
+      "dependsOn": ["build:pkg"]
+    },
+    "release": {
+      "dependsOn": ["bump"]
     }
   }
 }
