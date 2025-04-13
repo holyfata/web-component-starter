@@ -1,1 +1,1 @@
-export * from './stencil-output/components';
+export * from "./stencil-output/components";

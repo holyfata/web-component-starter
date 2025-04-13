@@ -1,34 +1,27 @@
 {
-    "$schema": "https://turbo.build/schema.json",
-    "tasks": {
-        "build": {
-            "outputs": ["dist/**"],
-            "dependsOn": [
-                "package-vanilla#build",
-                "package-react#build",
-                "package-vue#build"
-            ]
-        },
-        "package-vanilla#build": {
-            "outputs": ["dist/**"]
-        },
-        "package-react#build": {
-            "outputs": ["dist/**"],
-            "dependsOn": [
-                "package-vanilla#build"
-            ]
-        },
-        "package-vue#build": {
-            "outputs": ["dist/**"],
-            "dependsOn": [
-                "package-vanilla#build"
-            ]
-        },
-        "dev": {
-            "dependsOn": [
-                "package-react#build",
-                "package-vue#build"
-            ]
-        }
+  "$schema": "https://turbo.build/schema.json",
+  "tasks": {
+    "build": {
+      "outputs": ["dist/**"],
+      "dependsOn": [
+        "package-vanilla#build",
+        "package-react#build",
+        "package-vue#build"
+      ]
+    },
+    "package-vanilla#build": {
+      "outputs": ["dist/**"]
+    },
+    "package-react#build": {
+      "outputs": ["dist/**"],
+      "dependsOn": ["package-vanilla#build"]
+    },
+    "package-vue#build": {
+      "outputs": ["dist/**"],
+      "dependsOn": ["package-vanilla#build"]
+    },
+    "dev": {
+      "dependsOn": ["package-react#build", "package-vue#build"]
     }
+  }
 }

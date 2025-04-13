@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { HfQrcode } from "package-vue"
+import { HfQrcode } from "package-vue";
 </script>
 
 <template>
-	<div>
-		<HfQrcode />
-	</div>
+  <div>
+    <HfQrcode />
+  </div>
 </template>

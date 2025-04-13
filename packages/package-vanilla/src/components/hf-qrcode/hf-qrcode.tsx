@@ -1,8 +1,8 @@
-import { Component, Host, h } from '@stencil/core';
+import { Component, Host, h } from "@stencil/core";
 
 @Component({
-  tag: 'hf-qrcode',
-  styleUrl: 'hf-qrcode.css',
+  tag: "hf-qrcode",
+  styleUrl: "hf-qrcode.css",
   shadow: true,
 })
 export class HfQrcode {

@@ -6,32 +6,32 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
-    interface HfQrcode {
-    }
+  interface HfQrcode {}
 }
 declare global {
-    interface HTMLHfQrcodeElement extends Components.HfQrcode, HTMLStencilElement {
-    }
-    var HTMLHfQrcodeElement: {
-        prototype: HTMLHfQrcodeElement;
-        new (): HTMLHfQrcodeElement;
-    };
-    interface HTMLElementTagNameMap {
-        "hf-qrcode": HTMLHfQrcodeElement;
-    }
+  interface HTMLHfQrcodeElement
+    extends Components.HfQrcode,
+      HTMLStencilElement {}
+  var HTMLHfQrcodeElement: {
+    prototype: HTMLHfQrcodeElement;
+    new (): HTMLHfQrcodeElement;
+  };
+  interface HTMLElementTagNameMap {
+    "hf-qrcode": HTMLHfQrcodeElement;
+  }
 }
 declare namespace LocalJSX {
-    interface HfQrcode {
-    }
-    interface IntrinsicElements {
-        "hf-qrcode": HfQrcode;
-    }
+  interface HfQrcode {}
+  interface IntrinsicElements {
+    "hf-qrcode": HfQrcode;
+  }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
-    export namespace JSX {
-        interface IntrinsicElements {
-            "hf-qrcode": LocalJSX.HfQrcode & JSXBase.HTMLAttributes<HTMLHfQrcodeElement>;
-        }
+  export namespace JSX {
+    interface IntrinsicElements {
+      "hf-qrcode": LocalJSX.HfQrcode &
+        JSXBase.HTMLAttributes<HTMLHfQrcodeElement>;
     }
+  }
 }
