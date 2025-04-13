@@ -6,10 +6,12 @@
     "version": "changeset version",
     "bump": "turbo run bump",
     "release": "turbo run release",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "prepare": "husky"
   },
   "devDependencies": {
     "@types/node": "^22.13.5",
+    "husky": "9.1.7",
     "prettier": "3.5.3",
     "turbo": "2.5.0",
     "typescript": "5.8.3"
