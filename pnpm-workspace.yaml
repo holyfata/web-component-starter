@@ -1,6 +1,5 @@
 packages:
   - app
-  - apps/*
   - packages/*
 onlyBuiltDependencies:
   - core-js
