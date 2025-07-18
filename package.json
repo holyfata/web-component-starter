@@ -1,5 +1,6 @@
 {
   "scripts": {
+    "dev:app": "pnpm --filter app dev",
     "dev": "turbo run dev",
     "build": "turbo run build",
     "build:pkg": "turbo run build:pkg",
